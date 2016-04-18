@@ -13,6 +13,10 @@
 		F7524CA01CC52F5F0020F2CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7524C9E1CC52F5F0020F2CB /* Main.storyboard */; };
 		F7524CA21CC52F5F0020F2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7524CA11CC52F5F0020F2CB /* Assets.xcassets */; };
 		F7524CA51CC52F5F0020F2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7524CA31CC52F5F0020F2CB /* LaunchScreen.storyboard */; };
+		F7524CB51CC52F7D0020F2CB /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F7524CAE1CC52F7D0020F2CB /* YYCache.m */; };
+		F7524CB61CC52F7D0020F2CB /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F7524CB01CC52F7D0020F2CB /* YYDiskCache.m */; };
+		F7524CB71CC52F7D0020F2CB /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F7524CB21CC52F7D0020F2CB /* YYKVStorage.m */; };
+		F7524CB81CC52F7D0020F2CB /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F7524CB41CC52F7D0020F2CB /* YYMemoryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		F7524CA11CC52F5F0020F2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7524CA41CC52F5F0020F2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7524CA61CC52F5F0020F2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7524CAD1CC52F7D0020F2CB /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		F7524CAE1CC52F7D0020F2CB /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		F7524CAF1CC52F7D0020F2CB /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		F7524CB01CC52F7D0020F2CB /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		F7524CB11CC52F7D0020F2CB /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		F7524CB21CC52F7D0020F2CB /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		F7524CB31CC52F7D0020F2CB /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		F7524CB41CC52F7D0020F2CB /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		F7524C941CC52F5F0020F2CB /* YYCacheDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F7524CAC1CC52F7D0020F2CB /* YYCache */,
 				F7524C981CC52F5F0020F2CB /* AppDelegate.h */,
 				F7524C991CC52F5F0020F2CB /* AppDelegate.m */,
 				F7524C9B1CC52F5F0020F2CB /* ViewController.h */,
@@ -77,6 +90,21 @@
 				F7524C961CC52F5F0020F2CB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7524CAC1CC52F7D0020F2CB /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				F7524CAD1CC52F7D0020F2CB /* YYCache.h */,
+				F7524CAE1CC52F7D0020F2CB /* YYCache.m */,
+				F7524CAF1CC52F7D0020F2CB /* YYDiskCache.h */,
+				F7524CB01CC52F7D0020F2CB /* YYDiskCache.m */,
+				F7524CB11CC52F7D0020F2CB /* YYKVStorage.h */,
+				F7524CB21CC52F7D0020F2CB /* YYKVStorage.m */,
+				F7524CB31CC52F7D0020F2CB /* YYMemoryCache.h */,
+				F7524CB41CC52F7D0020F2CB /* YYMemoryCache.m */,
+			);
+			path = YYCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7524CB71CC52F7D0020F2CB /* YYKVStorage.m in Sources */,
 				F7524C9D1CC52F5F0020F2CB /* ViewController.m in Sources */,
 				F7524C9A1CC52F5F0020F2CB /* AppDelegate.m in Sources */,
+				F7524CB61CC52F7D0020F2CB /* YYDiskCache.m in Sources */,
+				F7524CB51CC52F7D0020F2CB /* YYCache.m in Sources */,
+				F7524CB81CC52F7D0020F2CB /* YYMemoryCache.m in Sources */,
 				F7524C971CC52F5F0020F2CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
